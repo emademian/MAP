@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: LIGHTSKYBLUE;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.labjavafx.LogInController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="600.0" layoutY="-193.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Social-Network-PNG-Image.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="200.0" layoutY="24.0" prefHeight="353.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10;">
+         <children>
+            <Label layoutX="20.0" layoutY="27.0" prefHeight="29.0" prefWidth="75.0" text="Log in">
+               <font>
+                  <Font name="Helvetica" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="20.0" layoutY="98.0" promptText="Username" style="-fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10;" />
+            <TextField fx:id="passwordShow" layoutX="20.0" layoutY="138.0" promptText="Password" style="-fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10;" />
+            <PasswordField fx:id="password" layoutX="20.0" layoutY="138.0" promptText="Password" style="-fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10;" />
+            <CheckBox fx:id="showPassCheck" layoutX="21.0" layoutY="174.0" mnemonicParsing="false" onAction="#onShowPasswordChecked" text="Show password " textFill="#9a8686">
+               <font>
+                  <Font name="Helvetica" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </CheckBox>
+            <Button fx:id="logInBtn" layoutX="71.0" layoutY="244.0" mnemonicParsing="false" onAction="#onLogInButtonClick" style="-fx-background-color: STEELBLUE;" text="Log in" textFill="WHITE">
+               <font>
+                  <Font name="Helvetica" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="11.0" layoutY="318.0" text="not registered?" textFill="#9a8686">
+               <font>
+                  <Font name="Helvetica" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="signInBtn" layoutX="125.0" layoutY="314.0" mnemonicParsing="false" onAction="#onSignInButtonClick" style="-fx-background-color: white;" text="SIGN UP" textFill="STEELBLUE" underline="true">
+               <font>
+                  <Font name="Helvetica" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="forgotPassBtn" layoutX="39.0" layoutY="269.0" mnemonicParsing="false" onAction="#onForgotPassButtonClick" style="-fx-background-color: transparent;" text="forgot password?" textFill="#9a8686" underline="true">
+               <font>
+                  <Font name="Helvetica" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="warningLabel" layoutX="20.0" layoutY="63.0" prefHeight="25.0" prefWidth="161.0" textFill="RED" visible="false" wrapText="true">
+               <font>
+                  <Font name="Helvetica" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
